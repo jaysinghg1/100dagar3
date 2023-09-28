@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+    height: 60px;
+    width: 100%;
+    background-color:blueviolet;
+    position:absolute;
+}
+
+.gradient {
+    height: 60px;
+    width: 140px;
+    text-align: center;
+}
+
+.gradient h6 {
+    background: conic-gradient(from -30deg at 30% 50%, rgb(12, 234, 60) 30deg 120deg, rgb(243, 45, 19) 60deg 180deg, rgb(32, 32, 244) 180deg 240deg, rgb(18, 171, 247) 240deg 300deg, rgb(241, 105, 8) 300deg 360deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+
+         .main {
+            height:90vh;
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: auto;
+            background-color: rgb(16, 195, 240);
+        }
+
+        form {
+            background-color: rgb(244, 27, 27);
+            border: 5px solid white;
+            border-radius: 22px;
+            height: 230px;
+            width:auto;
+            font-size: 25px;
+            padding:35px;
+            color: white;
+            margin-top: 50px;
+        }
+        .text{
+            height: 30px;
+            width: 200px;
+            font-size: 18px;
+        }
+
+        .pass{
+            height:30px;
+            width: 200px;
+            font-size: 25px;
+        }
+        .login{
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            margin-left: 130px;
+            margin-top: 80px;
+          position: absolute;
+        }
+        .mail{
+            font-size: 20px;
+            width: 200px;
+        }
+        .footer {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 80px;
+}
+@media (max-width:768px){
+    * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+    height: 60px;
+    width: 100%;
+    background-color:blueviolet;
+    position:absolute;
+}
+
+.gradient {
+    height: 60px;
+    width: 140px;
+    text-align: center;
+}
+
+.gradient h6 {
+    background: conic-gradient(from -30deg at 30% 50%, rgb(12, 234, 60) 30deg 120deg, rgb(243, 45, 19) 60deg 180deg, rgb(32, 32, 244) 180deg 240deg, rgb(18, 171, 247) 240deg 300deg, rgb(241, 105, 8) 300deg 360deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+.main {
+            height:90vh;
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: auto;
+            background-color: rgb(16, 195, 240);
+        }
+
+        form {
+            background-color: rgb(244, 27, 27);
+            border: 5px solid white;
+            border-radius: 22px;
+            height: 210px;
+            width:auto;
+            font-size: 20px;
+            padding: 35px;
+            color: white;
+            margin-top: 50px;
+        }
+        .text{
+            height: 25px;
+            width: 200px;
+            font-size: 18px;
+        }
+
+        .pass{
+            height:25px;
+            width: 200px;
+            font-size: 20px;
+        }
+        .login{
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            margin-left: 130px;
+            margin-top: 80px;
+          position: absolute;
+        }
+        .mail{
+            font-size: 18px;
+            width: 200px;
+        }
+}
+</style>
+<body>
+    <header class="header">
+        <div class="gradient">
+            <h6 class="animate__animated animate__jello animate__infinite	infinite">100दागर</h6></div>
+
+        </header>
+
+    <div class="main">
+        <form onsubmit="fee()" action="" name="myform" method="post">
+            <table>
+
+                <tr>
+                    <td> Email-</td>
+                    <td><input type="email" name="mail"  placeholder="Email-" class="mail"></td>
+                </tr><br>
+                <tr>
+                    <td> Password-</td>
+                    <td><input type="password" name="pasword" placeholder="Password-" class="pass"></td>
+                </tr>
+               
+
+             <button class="login">Log-in</button>
+            </table>
+
+
+        </form>
+    </div>
+    <div class="footer">runner by jay singh-@2023</div>
+    <script>
+        function fee(){
+            let pasword=document.myform.pasword.value
+            if(pasword==""){
+                alert("pls enter the digit")
+            }
+            if(pasword.length>=6){
+                alert("pls enter less digit")
+            };
+            if(pasword.length>=7){
+                alert("pls enter less digit")
+            }
+        }
+            </script>
+</body>
+</html>

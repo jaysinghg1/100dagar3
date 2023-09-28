@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="type.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+    height: 60px;
+    width: 100%;
+    background-color:blueviolet;
+    position:absolute;
+}
+
+.gradient {
+    height: 60px;
+    width: 140px;
+    text-align: center;
+}
+
+.gradient h6 {
+    background: conic-gradient(from -30deg at 30% 50%, rgb(12, 234, 60) 30deg 120deg, rgb(243, 45, 19) 60deg 180deg, rgb(32, 32, 244) 180deg 240deg, rgb(18, 171, 247) 240deg 300deg, rgb(241, 105, 8) 300deg 360deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+
+    .main {
+        height:90vh;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        background-color: beige;
+    }
+
+    .main form {
+        background-color:transparent;
+        border: 5px solid white;
+        border-radius: 22px;
+        font-size: 25px;
+        padding: 38px;
+        color: green;
+        margin-top: 45px;
+    }
+
+    .text {
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .mail {
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .pass {
+        height: 30px;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .signin {
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        margin-left: 110px;
+    }
+
+    .male {
+
+        height: 18px;
+        width: 18px;
+    }
+
+    .female {
+
+        height: 18px;
+        width: 18px;
+    }
+
+    .age {
+        font-size: 22px;
+    }
+    .footer {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 80px;
+}
+@media (max-width:768px){
+    * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+    height: 60px;
+    width: 100%;
+    background-color:blueviolet;
+    position:absolute;
+}
+
+.gradient {
+    height: 60px;
+    width: 140px;
+    text-align: center;
+}
+
+.gradient h6 {
+    background: conic-gradient(from -30deg at 30% 50%, rgb(12, 234, 60) 30deg 120deg, rgb(243, 45, 19) 60deg 180deg, rgb(32, 32, 244) 180deg 240deg, rgb(18, 171, 247) 240deg 300deg, rgb(241, 105, 8) 300deg 360deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-top: 22px;
+    margin-left: 15px;
+}
+
+
+    .main {
+        height:90vh;
+        width: auto;
+        background-color: rgb(237, 45, 176);
+    }
+
+    .main form {
+        background-color:transparent;
+        border: 5px solid rgb(8, 235, 24);
+        border-radius: 22px;
+        font-size:18px;
+        padding: 15px;
+        color: green;
+    }
+
+    .text {
+        height: 25px;
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .mail {
+        height: 25px;
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .pass {
+        height: 25px;
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .signin {
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        margin-left: 110px;
+    }
+
+    .male {
+
+        height: 15px;
+        width: 15px;
+    }
+
+    .female {
+
+        height: 15px;
+        width: 15px;
+    }
+
+    .age {
+        font-size: 18px;
+    }
+    .footer {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 80px;
+}
+}
+</style>
+
+<body>
+    <header class="header">
+        <div class="gradient">
+            <h6 class="animate__animated animate__jello animate__infinite	infinite">100दागर</h6></div>
+
+        </header>
+      
+        <div class="main">
+
+            <form onsubmit="return fee()" action="" name="myform" method="post">
+                
+                <table>
+                    <tr>
+                        <td>
+                            Name-</td>
+                        <td><input type="text" name="nam" placeholder="Name-" class="text"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender-</td>
+                        <td>Male-<input type="radio" name="name" class="male">
+                            Female-<input type="radio" name="name" class="female"></td>
+                    </tr>
+                    <tr>
+                        <td>Age-</td>
+                        <td><input type="date" class="age"></td>
+                    </tr>
+
+                    <tr>
+                        <td> Email-</td>
+                        <td><input type="email" name="mail" placeholder="Email-" class="mail"></td>
+                    </tr><br>
+                    <tr>
+                        <td> Password-</td>
+                        <td><input type="password" name="pas" placeholder="Password-" class="pass"></td>
+                    </tr>
+
+
+
+                    <td><a href="../links/login.html">Already Account...?</a></td>
+                    <td><button class="signin">Sign-Up</button></td>
+                </table>
+
+
+            </form>
+        </div>
+        
+        </div>  
+
+        <div class="footer">runner by jay singh-@2023</div>
+    
+        <script>
+            function fee() {
+                let nam = document.myform.nam.value
+                if (nam == "") {
+                    alert("pls fill the name")
+                };
+                if (!isNaN(nam)) {
+                    alert("pls fill the words name")
+                };
+                if (nam.length >= 10) {
+                    alert("pls enter less words")
+                };
+                if (nam.length <= 1) {
+                    alert("pls enter more words")
+                };
+                let pas = document.myform.pas.value;
+                if (pas=="") {
+                    alert("pls enter password")
+                }
+                if (pas.length >= 6) {
+                    alert("pls enter less digit")
+                }
+            }
+        </script>
+</body>
+
+</html>
